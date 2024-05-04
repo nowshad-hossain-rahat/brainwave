@@ -1,3 +1,4 @@
+import React from "react";
 import SectionSvg from "../assets/svg/SectionSvg";
 
 const Section = ({
@@ -7,6 +8,13 @@ const Section = ({
   crossesOffset,
   customPaddings,
   children,
+}: {
+  className?: string;
+  id?: string;
+  crosses?: boolean;
+  crossesOffset?: string;
+  customPaddings?: string;
+  children: any;
 }) => {
   return (
     <div

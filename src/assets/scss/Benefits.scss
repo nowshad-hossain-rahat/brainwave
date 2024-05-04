@@ -1,0 +1,9 @@
+.benefits {
+  position: absolute;
+  top: 0;
+  left: calc(1/4 * 100%);
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: radial-gradient(to_70% , #28206C, #28206C);
+  pointer-events: none;
+}
