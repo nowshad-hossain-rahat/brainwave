@@ -1,6 +1,7 @@
+import React from "react";
 import { companyLogos } from "../constants";
 
-const CompanyLogos = ({ className }) => {
+const CompanyLogos = ({ className }: { className?: string }) => {
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">

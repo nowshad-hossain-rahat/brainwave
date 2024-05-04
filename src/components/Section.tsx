@@ -13,7 +13,7 @@ const Section = ({
   id?: string;
   crosses?: boolean;
   crossesOffset?: string;
-  customPaddings?: string;
+  customPaddings?: boolean;
   children: any;
 }) => {
   return (

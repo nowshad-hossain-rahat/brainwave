@@ -1,6 +1,13 @@
+import React from "react";
 import brackets from "../assets/svg/Brackets";
 
-const TagLine = ({ className, children }) => {
+const TagLine = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children?: any;
+}) => {
   return (
     <div className={`tagline flex items-center ${className || ""}`}>
       {brackets("left")}

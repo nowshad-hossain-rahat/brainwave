@@ -3,10 +3,10 @@ import ButtonSvg from "../assets/svg/ButtonSvg";
 import "../assets/scss/Button.scss";
 
 const Button = ({ className, href, onClick, children, px, white }: {
-  className: string;
-  href: string;
-  onClick: () => any;
-  children: any;
+  className?: string;
+  href?: string;
+  onClick?: () => any;
+  children?: any;
   px?: string;
   white?: boolean;
 }) => {

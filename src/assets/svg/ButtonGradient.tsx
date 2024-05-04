@@ -1,4 +1,6 @@
-const ButtonGradient = () => {
+import React from "react";
+
+export default function ButtonGradient() {
   return (
     <svg className="block" width={0} height={0}>
       <defs>
@@ -27,6 +29,4 @@ const ButtonGradient = () => {
       </defs>
     </svg>
   );
-};
-
-export default ButtonGradient;
+}

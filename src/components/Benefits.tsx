@@ -1,10 +1,10 @@
 import React from "react";
 import { benefits } from "../constants";
-import Heading from "./Heading";
-import Section from "./Section";
-import Arrow from "../assets/svg/Arrow";
-import { GradientLight } from "./design/GradientLight";
-import ClipPath from "../assets/svg/ClipPath";
+import Heading from "./Heading.tsx";
+import Section from "./Section.tsx";
+import Arrow from "../assets/svg/Arrow.tsx";
+import { GradientLight } from "./design/GradientLight.tsx";
+import ClipPath from "../assets/svg/ClipPath.tsx";
 
 const Benefits = () => {
   return (

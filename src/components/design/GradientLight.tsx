@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/Benefits.scss";
+import "../../assets/scss/GradientLight.scss";
 
 export const GradientLight = () => {
   return (
