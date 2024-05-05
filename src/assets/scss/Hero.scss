@@ -1,0 +1,26 @@
+.section-component {
+  padding-top: 12rem;
+  margin-top: -5.25rem;
+  &.crosses-offset {
+    @media (min-width: 1024px) {
+
+        --tw-translate-y: 5.25rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+    }
+  }
+
+  .section-container{
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 640px) {
+    max-width: 640px;
+    }
+    @media (min-width: 768px) {
+            max-width: 768px;
+        }
+  }
+}

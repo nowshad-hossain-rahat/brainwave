@@ -10,7 +10,7 @@ header {
   &.bg-black {
     background-color: rgb(14, 12, 21);
   }
-  
+
   &.bg-black-backdrop {
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(4px);
@@ -143,6 +143,46 @@ header {
             padding-bottom: 2rem;
           }
         }
+      }
+    }
+
+    .new-account-btn {
+      font-family: "Source Code Pro", monospace;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: none;
+      margin-right: 2rem;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all 0.2s linear;
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+
+      @media (min-width: 1024px) {
+        display: inline-flex;
+      }
+    }
+    
+    .signin-btn {
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: flex;
+      }
+    }
+
+    .toggle-btn {
+      margin-left: auto;
+      &.btn-px {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      @media (min-width: 1024px) {
+        display: none;
       }
     }
   }
