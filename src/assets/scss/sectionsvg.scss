@@ -1,0 +1,33 @@
+.plussvg{
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    top: -0.3125rem;
+
+    @media (min-width: 1024px) {
+    display: block;
+    }
+
+    &.div-1{
+        left: 1.5625rem;
+
+        @media (min-width: 1280px) {
+        left: 2.1875rem;
+        }
+    }
+
+    &.div-2{
+        right: 1.5625rem;
+
+        @media (min-width: 1280px) {
+        right: 2.1875rem;
+        }
+    }
+}
+
+
+.crossesOffset-css {
+    @media (min-width: 1024px) {
+      transform: translateY(5.25rem);
+    }
+  }

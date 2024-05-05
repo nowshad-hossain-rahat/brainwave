@@ -10,10 +10,11 @@ const Button = ({ className, href, onClick, children, px, white }: {
   px?: string;
   white?: boolean;
 }) => {
-  const classes = `button h-11 ${
+  const classes = `button ${
     px || "px-7"
   } ${white ? "color-black" : "color-white"} ${className || ""}`;
   const spanClasses = "relative z-10";
+
 
   const renderButton = () => (
     <button className={classes} onClick={onClick}>

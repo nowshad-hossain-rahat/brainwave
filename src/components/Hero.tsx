@@ -17,7 +17,7 @@ const Hero = () => {
     <Section
       className="hero-section-container"
       crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
+      crossesOffset="crossesOffset-css"
       customPaddings
       id="hero"
     >

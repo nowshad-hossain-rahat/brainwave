@@ -5,15 +5,15 @@ const SectionSvg = ({ crossesOffset }: { crossesOffset?: string }) => {
   return (
     <>
       <PlusSvg
-        className={`hidden absolute -top-[0.3125rem] left-[1.5625rem] ${
+        className={`plussvg div-1 ${
           crossesOffset && crossesOffset
-        } pointer-events-none lg:block xl:left-[2.1875rem]`}
+        }  `}
       />
 
       <PlusSvg
-        className={`hidden absolute  -top-[0.3125rem] right-[1.5625rem] ${
+        className={`plussvg div-2 ${
           crossesOffset && crossesOffset
-        } pointer-events-none lg:block xl:right-[2.1875rem]`}
+        }`}
       />
     </>
   );
