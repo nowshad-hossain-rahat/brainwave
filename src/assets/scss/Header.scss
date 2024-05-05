@@ -2,51 +2,53 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  height: 85px;
   width: 100%;
   z-index: 50;
   border-bottom: 1px solid #333;
 
+  &.bg-black {
+    background-color: rgb(14, 12, 21);
+  }
+  
+  &.bg-black-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+  }
+
   @media (min-width: 1024px) {
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.8
-    );
-    backdrop-filter: blur(
-      4px
-    );  
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
   }
 
   .content {
     display: flex;
     align-items: center;
     justify-items: center;
-    padding-left: 1.25rem; // 5px equivalent to px-5
-    padding-right: 1.25rem; // 5px equivalent to px-5
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 
     @media (min-width: 1024px) {
-      padding-left: 1.875rem; // 7.5px equivalent to lg:px-7.5
-      padding-right: 1.875rem; // 7.5px equivalent to lg:px-7.5
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
     }
 
     @media (min-width: 1280px) {
-      padding-left: 2.5rem; // 10px equivalent to xl:px-10
-      padding-right: 2.5rem; // 10px equivalent to xl:px-10
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
 
     @media (max-width: 1023px) {
-      padding-top: 1rem; // 4px equivalent to max-lg:py-4
-      padding-bottom: 1rem; // 4px equivalent to max-lg:py-4
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 
     .logo {
       display: block;
-      width: 12rem; // Equivalent to w-[12rem]
+      width: 12rem;
 
       @media (min-width: 1280px) {
-        // Assuming xl breakpoint starts at 1280px
-        margin-right: 2rem; // Equivalent to xl:mr-8
+        margin-right: 2rem;
       }
     }
 
@@ -56,7 +58,7 @@ header {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(14 ,12 ,21, 1);
+      background-color: rgba(14, 12, 21, 1);
 
       &.nav-flex {
         display: flex;
@@ -73,7 +75,7 @@ header {
         background-color: transparent;
       }
 
-      .nav_ul {
+      .nav-ul {
         position: relative;
         z-index: 2;
         display: flex;
@@ -86,22 +88,20 @@ header {
           flex-direction: row;
         }
 
-        .nav_item {
-          padding-left: 1.5rem;
-          padding-right: 1.5rem /* 24px */;
-          padding-top: 1.5rem /* 24px */;
-          padding-bottom: 1.5rem /* 24px */;
+        .nav-item {
+          padding: 1.5rem;
           display: block;
           position: relative;
-          font-family: var(--font-code);
+          font-family: "Source Code Pro", monospace;
           text-transform: uppercase;
-          font-size: 1.5rem /* 24px */;
-          line-height: 2rem /* 32px */;
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 2rem;
           color: rgba(255, 255, 255, 1);
           transition: all 0.2s linear;
 
           &:hover {
-            color: rgba(172,106,255);
+            color: white !important;
           }
 
           &.only-mobile {
@@ -110,52 +110,40 @@ header {
             }
           }
 
-          &.item-hash-true{
+          &.item-hash-true {
             z-index: 2;
+
             @media (min-width: 1024px) {
-          color: rgba(255,255,255 ,1);
-               
+              color: rgba(255, 255, 255, 1);
             }
           }
 
-
-          &.item-hash-false{
+          &.item-hash-false {
             @media (min-width: 1024px) {
-                color: rgba(255 ,255, 255 , 0.5); 
+              color: rgba(255, 255, 255, 0.5);
             }
           }
-          
+
           @media (min-width: 1280px) {
-       
-                padding-left: 3rem/* 48px */;
-                padding-right: 3rem/* 48px */;
-       
-        }
+            padding-left: 3rem;
+            padding-right: 3rem;
+          }
 
           @media (min-width: 1024px) {
             font-weight: 600;
-            line-height: 1.25rem/* 20px */;
-            color: rgba(255, 255 ,255 ,1);
-            font-size: 0.75rem /* 12px */;
-            line-height: 1rem /* 16px */;
-            margin-right: -0.0625rem /* -1px */;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.75rem;
+            line-height: 1rem;
+            margin-right: -0.0625rem;
           }
 
           @media (min-width: 768px) {
-            padding-top: 2rem /* 32px */;
-            padding-bottom: 2rem /* 32px */;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
           }
         }
       }
     }
   }
-}
-
-.bg-black {
-  background-color: rgb(14, 12, 21);
-}
-
-.bg-black-backdrop {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(4px);
 }

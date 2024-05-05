@@ -32,35 +32,27 @@ const Header = () => {
 
   useEffect(() => {
     if (window.innerWidth <= 768) {
-      setOpenNavigation(false)
+      setOpenNavigation(false);
     } else {
-      setOpenNavigation(true)
+      setOpenNavigation(true);
     }
-  }, [])
+  }, []);
 
   return (
-    <header
-      className={`${
-        openNavigation ? "bg-black" : "bg-black-backdrop"
-      }`}
-    >
+    <header className={`${openNavigation ? "bg-black" : "bg-black-backdrop"}`}>
       <div className="content">
         <a className="logo" href="#hero">
           <img src={brainwave} width={190} height={40} alt="Brainwave" />
         </a>
 
-        <nav
-          className={`${
-            openNavigation ? "nav-flex" : "nav-hidden"
-          }`}
-        >
-          <div className="nav_ul">
+        <nav className={`${openNavigation ? "nav-flex" : "nav-hidden"}`}>
+          <div className="nav-ul">
             {navigation.map((item) => (
               <a
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`nav_item ${item.onlyMobile ? "only-mobile" : ""} ${
+                className={`nav-item ${item.onlyMobile ? "only-mobile" : ""} ${
                   item.url === pathname.hash
                     ? "item-hash-true"
                     : "item-hash-false"
