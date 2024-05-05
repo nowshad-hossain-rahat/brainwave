@@ -1,0 +1,27 @@
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  background-color: rgb(71, 64, 96, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  gap: 1.25rem;
+
+  &.from-hero-section {
+    position: absolute;
+    display: none;
+    right: -5.5rem;
+    bottom: 11rem;
+    width: 18rem;
+    
+    @media (min-width: 1280px) {
+      display: flex;
+    }
+  }
+
+  .icon {
+    border-radius: 0.75rem;;
+  }
+}

@@ -66,21 +66,15 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <a
-          href="#signup"
-          className="new-account-btn"
-        >
+        <a href="#signup" className="new-account-btn">
           New account
         </a>
+        
         <Button className="signin-btn" href="#login">
           Sign in
         </Button>
 
-        <Button
-          className="toggle-btn"
-          px="btn-px"
-          onClick={toggleNavigation}
-        >
+        <Button className="toggle-btn" px="btn-px" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
