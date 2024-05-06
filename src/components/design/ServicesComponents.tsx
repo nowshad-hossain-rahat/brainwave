@@ -17,9 +17,10 @@ export const Gradient = () => {
 
 export const PhotoChatMessage = () => {
   return (
-    <div className="photo-chat-content">
+    // <div className="absolute top-8 right-8 max-w-[17.5rem] py-6 px-8 bg-black rounded-t-xl rounded-bl-xl font-code text-base lg:top-16 lg:right-[8.75rem] lg:max-w-[17.5rem]">
+    <div className="photo-chat-content"> 
       Hey Brainwave, enhance this photo
-      <ChatBubbleWing className="chat-bubble-wing" />
+      <ChatBubbleWing className="chat-bubble-wing-photo" />
     </div>
   );
 };
@@ -40,7 +41,8 @@ export const VideoChatMessage = () => {
         just now
       </p>
       <ChatBubbleWing
-        className="chat-bubble-wing-video"
+       className="chat-bubble-wing-video"
+
         pathClassName="fill-n-6"
       />
     </div>

@@ -17,6 +17,10 @@
   scroll-behavior: smooth;
 }
 
+.fill-n-6{
+  fill: #252134;
+}
+
 @layer base {
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
