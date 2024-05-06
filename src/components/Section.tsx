@@ -23,7 +23,7 @@ const Section = ({
       main-container 
       ${
         customPaddings ||
-        `if-no-custom-paddings  ${crosses ? "if-crosses" : ""}`
+        `if-no-custom-paddings ${crosses ? "if-crosses" : ""}`
       } 
       ${className || ""}`}
     >
