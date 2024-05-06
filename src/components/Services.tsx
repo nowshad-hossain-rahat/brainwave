@@ -75,7 +75,7 @@ const Services = () => {
               <PhotoChatMessage />
             </div>
 
-            <div className="video">
+            <div className="video p-4 ">
               <div className="video-content">
                 <h4>Video generation</h4>
                 <p className="body-2">
@@ -87,16 +87,16 @@ const Services = () => {
                   {brainwaveServicesIcons.map((item, index) => (
                     <li
                       key={index}
-                      className={` ${
+                      className={`${
                         index === 2
-                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                          ? "index-2-true"
+                          : "index-2-false"
                       }`}
                     >
-                      <div
+                       <div
                         className={
                           index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
+                            ? "index-2-true"
                             : ""
                         }
                       >
