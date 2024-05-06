@@ -25,7 +25,6 @@ const Services = () => {
           <div className="smart-ai">
             <div className="img-container">
               <img
-                className="w-full h-full object-cover md:object-right"
                 width={800}
                 alt="Smartest AI"
                 height={730}
@@ -64,9 +63,9 @@ const Services = () => {
                 />
               </div>
 
-              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
-                <p className="body-2 mb-[3rem] text-n-3">
+              <div className="photo-content">
+                <h4>Photo editing</h4>
+                <p className="body-2">
                   Automatically enhance your photos using our AI app&apos;s
                   photo editing feature. Try it now!
                 </p>
@@ -75,7 +74,7 @@ const Services = () => {
               <PhotoChatMessage />
             </div>
 
-            <div className="video p-4 ">
+            <div className="video">
               <div className="video-content">
                 <h4>Video generation</h4>
                 <p className="body-2">
@@ -107,10 +106,9 @@ const Services = () => {
                 </ul>
               </div>
 
-              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+              <div className="video-img-container">
                 <img
                   src={service3}
-                  className="w-full h-full object-cover"
                   width={520}
                   height={400}
                   alt="Scary robot"
