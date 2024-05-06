@@ -1,0 +1,114 @@
+.pricing-list {
+  display: flex;
+  gap: 1rem;
+
+  @media not all and (min-width: 1024px) {
+    flex-wrap: wrap;
+  }
+
+  .pricing-item {
+    width: 19rem;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgb(14, 12, 21);
+    border: 1px solid rgb(37, 33, 52);
+    border-radius: 2rem;
+
+    &:nth-child(even) {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    &:nth-child(odd) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    > h4 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      line-height: 1.5;
+
+      &:first-child {
+        color: rgb(255, 200, 118);
+      }
+
+      &:nth-child(even) {
+        color: rgb(172, 106, 255);
+      }
+
+      &:last-child {
+        color: rgb(255, 119, 111);
+      }
+    }
+
+    > p {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.5rem;
+      min-height: 4rem;
+      margin-bottom: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+
+      @media (min-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      height: 5.5rem;
+      margin-bottom: 1.5rem;
+
+      .symbol {
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media (min-width: 768px) {
+          font-size: 2.5rem;
+        }
+      }
+
+      .value {
+        font-size: 5.5rem;
+        line-height: 1;
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      li {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        border: 1px solid rgb(37, 33, 52);
+
+        p {
+          font-size: 0.875rem;
+          font-weight: 300;
+          line-height: 1.5rem;
+          margin-left: 1rem;
+
+          @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
+      width: auto;
+    }
+
+    @media not all and (min-width: 1024px) {
+      width: 100%;
+    }
+  }
+}

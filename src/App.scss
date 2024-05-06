@@ -87,6 +87,15 @@
   @apply rotate-[-360deg];
 }
 
+.app-container {
+  padding-top: 4.75rem;
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    padding-top: 5.25rem;
+  }
+}
+
 .relative {
   position: relative;
 }
