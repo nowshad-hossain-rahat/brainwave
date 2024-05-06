@@ -17,7 +17,7 @@ const Heading = ({
     <div className={`${className} heading-section`}>
       {tag && <TagLine className="from-tagline">{tag}</TagLine>}
       {title && <h2>{title}</h2>}
-      {text && <p className="body-2 mt-4 text-n-4">{text}</p>}
+      {text && <p>{text}</p>}
     </div>
   );
 };

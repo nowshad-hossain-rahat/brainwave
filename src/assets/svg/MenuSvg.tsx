@@ -3,13 +3,13 @@ import React from "react";
 const MenuSvg = ({ openNavigation }: { openNavigation?: boolean }) => {
   return (
     <svg
-      className="overflow-visible"
+      className="menu-svg"
       width="20"
       height="12"
       viewBox="0 0 20 12"
     >
       <rect
-        className="transition-all origin-center"
+        className="rect"
         y={openNavigation ? "5" : "0"}
         width="20"
         height="2"
@@ -18,7 +18,7 @@ const MenuSvg = ({ openNavigation }: { openNavigation?: boolean }) => {
         transform={`rotate(${openNavigation ? "45" : "0"})`}
       />
       <rect
-        className="transition-all origin-center"
+        className="rect"
         y={openNavigation ? "5" : "10"}
         width="20"
         height="2"

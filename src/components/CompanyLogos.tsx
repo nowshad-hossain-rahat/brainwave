@@ -1,16 +1,15 @@
 import React from "react";
 import { companyLogos } from "../constants";
-
+import "../assets/scss/companylogos.scss"
 const CompanyLogos = ({ className }: { className?: string }) => {
   return (
-    <div className={className}>
-      <h5 className="tagline mb-6 text-center text-n-1/50">
+    <div id="container" className={className}>
+      <h5 className="h5">
         Helping people create beautiful content at
       </h5>
-      <ul className="flex">
+      <ul>
         {companyLogos.map((logo, index) => (
           <li
-            className="flex items-center justify-center flex-1 h-[8.5rem]"
             key={index}
           >
             <img src={logo} width={134} height={28} alt={logo} />
