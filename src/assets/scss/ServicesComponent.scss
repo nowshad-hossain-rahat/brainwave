@@ -7,6 +7,7 @@
   opacity: 0.5;
   mix-blend-mode: color-dodge;
   pointer-events: none;
+
   > img {
     position: absolute;
     top: 50%;
@@ -22,7 +23,7 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
-  max-width: 17.5rem;
+  max-width: 12.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
@@ -46,7 +47,7 @@
   position: absolute;
   left: 3.125rem;
   top: 2rem;
-  max-width: 14rem;
+  max-width: 12rem;
   width: 100%;
   padding-top: 0.625rem;
   padding-right: 0.625rem;
@@ -61,10 +62,10 @@
   line-height: 1.5rem;
 
   @media (min-width: 768px) {
-    max-width: 17.5rem /* 280px */;
+    max-width: 17.5rem;
   }
 
-  .video-chat-message-img-container{
+  .video-chat-message-img-container {
     position: absolute;
     left: 1.25rem;
     bottom: -1.125rem;
@@ -73,17 +74,16 @@
     justify-content: center;
     width: 2.25rem;
     height: 2.25rem;
-    background-color: rgba(172,106,255,1);
+    background-color: rgba(172, 106, 255, 1);
     border-radius: 0.75rem;
-
   }
-  >p{
+  > p {
     position: absolute;
     right: 0.625rem;
     bottom: 0.25rem;
     font-size: 0.625rem;
     text-transform: uppercase;
-    color: rgba(173,168,195,1);
+    color: rgba(173, 168, 195, 1);
     font-family: var(--font-grotesk);
     font-size: 0.75rem;
     line-height: 1rem;
@@ -92,29 +92,29 @@
   }
 }
 
-.video-bar{
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
+.video-bar {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
 
-    >img{
-        object-fit: contain;
-        margin-right: 0.75rem;
-    }
+  > img {
+    object-fit: contain;
+    margin-right: 0.75rem;
+  }
 
-    .bar-line{
-        flex: 1 1 0%;
-        background-color: #D9D9D9;
-        >div{
-            width: 50%;
-            height: 0.125rem;
-            background-color: rgba(172,106,255,1);
-        }  
+  .bar-line {
+    flex: 1 1 0%;
+    background-color: #d9d9d9;
+    > div {
+      width: 50%;
+      height: 0.125rem;
+      background-color: rgba(172, 106, 255, 1);
     }
+  }
 }
 
 .chat-bubble-wing-photo {
@@ -123,8 +123,8 @@
   bottom: 0px;
 }
 .chat-bubble-wing-video {
-    position: absolute;
-    right: 100%;
-    bottom: 0px;
-    transform:scaleX(-1);
-  }
+  position: absolute;
+  right: 100%;
+  bottom: 0px;
+  transform: scaleX(-1);
+}
