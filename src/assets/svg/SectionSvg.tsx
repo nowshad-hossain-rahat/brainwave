@@ -5,15 +5,11 @@ const SectionSvg = ({ crossesOffset }: { crossesOffset?: string }) => {
   return (
     <>
       <PlusSvg
-        className={`plussvg div-1 ${
-          crossesOffset && crossesOffset
-        }  `}
+        className={`bottom-line-plus section-svg ${crossesOffset && crossesOffset}  `}
       />
 
       <PlusSvg
-        className={`plussvg div-2 ${
-          crossesOffset && crossesOffset
-        }`}
+        className={`bottom-line-plus section-svg right ${crossesOffset && crossesOffset}`}
       />
     </>
   );

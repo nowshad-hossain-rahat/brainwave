@@ -1,7 +1,7 @@
 .main-container {
   position: relative;
 
-  &.custom-padding-or {
+  &.if-no-custom-paddings {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
@@ -16,7 +16,7 @@
     }
   }
 
-  &.crosses-true {
+  &.if-crosses {
     @media (min-width: 1024px) {
       padding-top: 8rem;
       padding-bottom: 8rem;
@@ -91,12 +91,31 @@
   }
 }
 
-.crossesOffset-css {
-  @media (min-width: 1024px) {
-    transform: translateY(5.25rem);
+.bottom-line-plus {
+  &.section-svg {
+    display: none;
+    position: absolute;
+    top: -0.3125rem;
+    left: 2.1875rem;
+    z-index: 2;
+    pointer-events: none;
+
+    &.right {
+      left: unset;
+      right: 2.1875rem;
+    }
+
+    @media (min-width: 1280px) {
+      display: block;
+    }
+
+    &.crossesOffset-css {
+      @media (min-width: 1024px) {
+        transform: translateY(5.25rem);
+      }
+    }
   }
 }
-
 
 .overflow-hidden {
   overflow: hidden;
