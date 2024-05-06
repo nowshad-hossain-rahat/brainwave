@@ -1,7 +1,7 @@
 .main-container {
   position: relative;
 
-  &.custom-padding-or {
+  &.if-no-custom-paddings {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
@@ -16,7 +16,7 @@
     }
   }
 
-  &.crosses-true {
+  &.if-crosses {
     @media (min-width: 1024px) {
       padding-top: 8rem;
       padding-bottom: 8rem;

@@ -1,6 +1,6 @@
 import React from "react";
 import SectionSvg from "../assets/svg/SectionSvg";
-import "../assets/scss/Section.scss"
+import "../assets/scss/Section.scss";
 const Section = ({
   className,
   id,
@@ -23,7 +23,7 @@ const Section = ({
       main-container 
       ${
         customPaddings ||
-        `custom-padding-or${crosses ? "crosses-true" : ""}`
+        `if-no-custom-paddings  ${crosses ? "if-crosses" : ""}`
       } 
       ${className || ""}`}
     >
@@ -35,9 +35,7 @@ const Section = ({
       {crosses && (
         <>
           <div
-            className={`crosses-and-div ${
-              crossesOffset && crossesOffset
-            }`}
+            className={`crosses-and-div ${crossesOffset && crossesOffset}`}
           />
           <SectionSvg crossesOffset={crossesOffset} />
         </>
