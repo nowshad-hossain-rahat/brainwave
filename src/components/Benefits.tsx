@@ -5,17 +5,18 @@ import Section from "./Section.tsx";
 import Arrow from "../assets/svg/Arrow.tsx";
 import { GradientLight } from "./design/GradientLight.tsx";
 import ClipPath from "../assets/svg/ClipPath.tsx";
+import "../assets/scss/Benefits.scss";
 
 const Benefits = () => {
   return (
-    <Section id="features">
-      <div className="container relative z-2">
+    <Section id="features" className="benefits-section">
+      <div className="content container">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="from-benefits"
           title="Chat Smarter, Not Harder with Brainwave"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="flex flex-wrap gap-10 mb-10 body">
           {benefits.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"

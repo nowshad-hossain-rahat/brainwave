@@ -26,15 +26,8 @@ const Notification = ({
         <div className="profile-container">
           <ul>
             {notificationImages.map((item, index) => (
-              <li
-                key={index}
-              >
-                <img
-                  src={item}
-                  width={20}
-                  height={20}
-                  alt={item}
-                />
+              <li key={index}>
+                <img src={item} width={20} height={20} alt={item} />
               </li>
             ))}
           </ul>

@@ -1,7 +1,8 @@
 .hero-section-container {
   padding-top: 12rem;
   margin-top: -5.25rem;
-  .content {
+
+  > .content {
     position: relative;
     width: 100%;
     margin: auto;
@@ -121,7 +122,7 @@
           #ffc876
         );
 
-        .content {
+        > .content {
           position: relative;
           background-color: rgb(14, 12, 21);
           border-radius: 1rem;

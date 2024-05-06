@@ -1,0 +1,12 @@
+.tagline {
+  display: flex;
+  align-items: center;
+
+  &.from-heading {
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+}

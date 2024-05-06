@@ -1,0 +1,48 @@
+.heading-section {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 5rem;
+  }
+
+  &.from-benefits {
+    @media (min-width: 768px) {
+      max-width: 28rem;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 42rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 3rem;
+      line-height: 1.25;
+    }
+  }
+
+  p {
+    
+  }
+}

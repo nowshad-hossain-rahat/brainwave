@@ -2,14 +2,18 @@ import React from "react";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/HeroComponents";
+import {
+  BackgroundCircles,
+  BottomLine,
+  Gradient,
+} from "./design/HeroComponents";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
-import "../assets/scss/Hero.scss"
+import "../assets/scss/Hero.scss";
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -26,13 +30,7 @@ const Hero = () => {
           <h1 className="heading">
             Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
             <span>
-              Brainwave{" "}
-              <img
-                src={curve}
-                width={624}
-                height={28}
-                alt="Curve"
-              />
+              Brainwave <img src={curve} width={624} height={28} alt="Curve" />
             </span>
           </h1>
 
@@ -52,12 +50,7 @@ const Hero = () => {
               <div className="top-line"></div>
 
               <div className="body">
-                <img
-                  src={robot}
-                  width={1024}
-                  height={490}
-                  alt="AI"
-                />
+                <img src={robot} width={1024} height={490} alt="AI" />
 
                 <Generating className="from-hero-section" />
 
