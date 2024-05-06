@@ -17,11 +17,11 @@ export const Gradient = () => {
 export const BottomLine = () => {
   return (
     <>
-      <div className="bottomLine-div pointer-events-none xl:block" />
+      <div className="bottom-line" />
 
-      <PlusSvg className="bottomLine-plussvg" />
+      <PlusSvg className="bottom-line-plus" />
 
-      <PlusSvg className="bottomLine-plussvg" />
+      <PlusSvg className="bottom-line-plus right" />
     </>
   );
 };
