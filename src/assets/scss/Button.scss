@@ -1,6 +1,7 @@
+button,
 .button {
-  font-family: var(--font-code);
-  font-size: 0.75rem ;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -11,17 +12,28 @@
   align-items: center;
   transition: all;
   height: 2.75rem;
+  width: fit-content;
+  box-sizing: border-box;
+
+  &.px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  &.toggle-btn{
+    margin-left: auto;
+  }
 
   &:hover {
-    color: rgb(172 106 255 / 1);
+    color: rgb(172, 106, 255, 1);
   }
 
   &.color-black {
-    color: rgb(14 12 21 / 1);
+    color: rgb(14, 12, 21, 1);
   }
 
   &.color-white {
-    color: rgb(255 255 255 / 1);
+    color: rgb(255, 255, 255, 1);
   }
 
   &.w-full {

@@ -20,11 +20,12 @@
     }
   }
 
-  >ul {
+  > ul {
     display: flex;
     gap: 1.25rem;
     flex-wrap: wrap;
-    >a {
+
+    > a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -33,6 +34,7 @@
       background-color: rgba(21, 19, 29, 1);
       border-radius: 9999px;
       transition: color 0.2s linear;
+
       &:hover {
         background-color: rgba(37, 33, 52, 1);
       }

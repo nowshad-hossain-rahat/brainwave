@@ -24,6 +24,7 @@
   .icon {
     border-radius: 0.75rem;
   }
+
   .notification-right-side {
     flex: 1 1 0%;
 
@@ -33,6 +34,7 @@
       font-size: 1rem;
       line-height: 1.5rem;
     }
+
     .profile-container {
       display: flex;
       align-items: center;
@@ -41,19 +43,21 @@
       ul {
         display: flex;
         margin: -0.125rem;
+
         li {
           display: flex;
           width: 1.5rem;
           height: 1.5rem;
-          border-width: 2px;
-          border-color: rgba(46, 42, 65, 1);
+          border: 2px solid rgba(46, 42, 65, 1);
           border-radius: 9999px;
           overflow: hidden;
+
           img {
             width: 100%;
           }
         }
       }
+      
       .time-text {
         color: rgb(108, 114, 117, 1);
         font-size: 0.875rem;

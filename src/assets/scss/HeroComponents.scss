@@ -70,10 +70,15 @@
   top: 50%;
   left: 50%;
   aspect-ratio: 1 / 1;
-  border-width: 0.0625rem;
+  border: 1px solid rgb(218, 218, 218);
   border-radius: 9999px;
   opacity: 0.3;
   transform: translate(-50%, -50%);
+
+  &.w-80-rem {
+    width: 80rem;
+    opacity: 0.03;
+  }
 
   &.w-65-rem {
     width: 65.875rem;
@@ -92,22 +97,24 @@
   }
 }
 
-.backgroundCircles-main {
+.background-circles-main {
   position: absolute;
   top: -42.375rem;
   left: 50%;
   width: 78rem;
   aspect-ratio: 1 / 1;
-  border-width: 0.0625rem;
   border-radius: 9999px;
-  border-color: rgba(202, 198, 221, 0.05);
+  border: 1px solid rgba(202, 198, 221, 0.05);
   transform: translateX(-50%);
+
   @media (min-width: 768px) {
     top: -38.5rem;
   }
+
   @media (min-width: 1280px) {
     top: -32rem;
   }
+
   .mouseparallax-main {
     position: absolute;
     bottom: 50%;
@@ -115,21 +122,27 @@
     width: 0.0625rem;
     height: 50%;
     transform-origin: bottom;
+
     &.rotate-46deg {
       transform: rotate(46deg);
     }
+
     &.rotate-ms-56deg {
       transform: rotate(-56deg);
     }
+
     &.rotate-54deg {
       transform: rotate(54deg);
     }
+
     &.rotate-ms-65deg {
       transform: rotate(-65deg);
     }
+
     &.rotate-ms-58deg {
       transform: rotate(-85deg);
     }
+
     &.rotate-70deg {
       transform: rotate(70deg);
     }

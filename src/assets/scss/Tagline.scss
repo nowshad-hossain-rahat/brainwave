@@ -1,7 +1,13 @@
-.tagline {
+.tag-line {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  div {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    color: rgb(173, 168, 195);
+  }
 
   &.from-heading {
     margin-bottom: 1rem;

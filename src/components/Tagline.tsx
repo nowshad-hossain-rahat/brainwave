@@ -10,9 +10,9 @@ const TagLine = ({
   children?: any;
 }) => {
   return (
-    <div className={`tagline ${className || ""}`}>
+    <div className={`tag-line ${className || ""}`}>
       {brackets("left")}
-      <div className="mx-3 text-n-3">{children}</div>
+      <div>{children}</div>
       {brackets("right")}
     </div>
   );

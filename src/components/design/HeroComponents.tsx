@@ -45,7 +45,7 @@ export const BackgroundCircles = ({ parallaxRef }: { parallaxRef?: any }) => {
   }, []);
 
   return (
-    <div className="backgroundCircles-main">
+    <div className="background-circles-main">
       <Rings />
 
       {/* Moving background colored circle balls */}
@@ -97,6 +97,7 @@ export const BackgroundCircles = ({ parallaxRef }: { parallaxRef?: any }) => {
             }`}
           />
         </div>
+
       </MouseParallax>
     </div>
   );

@@ -2,7 +2,14 @@ import React from "react";
 import ButtonSvg from "../assets/svg/ButtonSvg";
 import "../assets/scss/Button.scss";
 
-const Button = ({ className, href, onClick, children, px, white }: {
+const Button = ({
+  className,
+  href,
+  onClick,
+  children,
+  px,
+  white,
+}: {
   className?: string;
   href?: string;
   onClick?: () => any;
@@ -10,11 +17,10 @@ const Button = ({ className, href, onClick, children, px, white }: {
   px?: string;
   white?: boolean;
 }) => {
-  const classes = `button ${
-    px || "px-7"
-  } ${white ? "color-black" : "color-white"} ${className || ""}`;
+  const classes = `button ${px || "px-7"} ${
+    white ? "color-black" : "color-white"
+  } ${className || ""}`;
   const spanClasses = "relative z-10";
-
 
   const renderButton = () => (
     <button className={classes} onClick={onClick}>

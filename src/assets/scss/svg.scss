@@ -1,36 +1,36 @@
-.arrow{
-    margin-left: 1.25rem;
-    fill: #FFFFFF;
+.arrow {
+  margin-left: 1.25rem;
+  fill: #ffffff;
 }
 
-.button-svg-1{
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.button-svg-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
-.button-svg-2{
-    position: absolute;
-    top: 0px;
-    left: 1.3125rem;
-    width: calc(100% - 2.625rem);
+.button-svg-2 {
+  position: absolute;
+  top: 0px;
+  left: 1.3125rem;
+  width: calc(100% - 2.625rem);
 }
 
-.button-svg-3{
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.button-svg-3 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
-.clippath{
-    display: block;
+.clippath {
+  display: block;
 }
 
-.menu-svg{
-    overflow: visible;
+.menu-svg {
+  overflow: visible;
 
-    .rect{
-        transform-origin: center;
-        transition: all 0.2s linear;
-    }
+  .rect {
+    transform-origin: center;
+    transition: all 0.2s linear;
+  }
 }

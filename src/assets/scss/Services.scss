@@ -12,6 +12,7 @@
       padding: 2rem;
       border-width: 0.0625rem;
       border-color: rgba(255, 255, 255, 1);
+      border-style: solid;
       border-radius: 1.5rem;
       overflow: hidden;
 
@@ -75,6 +76,7 @@
             }
           }
         }
+
         ul {
           &.body-2 {
             font-size: 0.875rem;
@@ -92,8 +94,8 @@
             align-items: flex-start;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            border-top-width: 0.0625rem;
-            border-color: rgba(37, 33, 52, 1);
+            border-top: 0.0625rem solid rgba(37, 33, 52, 1);
+
             p {
               margin-left: 1rem;
             }
@@ -117,6 +119,7 @@
         min-height: 39rem;
         border-width: 0.0625rem;
         border-color: rgba(255, 255, 255, 0.1);
+        border-style: solid;
         border-radius: 1.5rem;
         overflow: hidden;
 
