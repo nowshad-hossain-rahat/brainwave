@@ -8,7 +8,7 @@ import { LeftLine, RightLine } from "./design/PricingComponents";
 const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
-      <div className="container content">
+      <div className="content container">
         <div className="graphics">
           <img
             src={smallSphere}
