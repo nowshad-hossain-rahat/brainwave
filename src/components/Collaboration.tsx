@@ -8,7 +8,7 @@ import "../assets/scss/Collaboration.scss";
 const Collaboration = () => {
   return (
     <Section crosses>
-      <div className="container  collaborate-section">
+      <div className="container collaborate-section">
         <div className="left-side">
           <h2>
             AI Chat App for seamless collaboration
