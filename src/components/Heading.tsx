@@ -1,4 +1,3 @@
-import React from "react";
 import TagLine from "./Tagline";
 import "../assets/scss/Heading.scss";
 

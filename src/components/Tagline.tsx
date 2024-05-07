@@ -1,14 +1,13 @@
-import React from "react";
 import brackets from "../assets/svg/Brackets";
 import "../assets/scss/Tagline.scss";
 
-const TagLine = ({
+export default function Tagline({
   className,
   children,
 }: {
   className?: string;
   children?: any;
-}) => {
+}) {
   return (
     <div className={`tag-line ${className || ""}`}>
       {brackets("left")}
@@ -16,6 +15,4 @@ const TagLine = ({
       {brackets("right")}
     </div>
   );
-};
-
-export default TagLine;
+}

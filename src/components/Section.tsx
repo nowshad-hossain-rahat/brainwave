@@ -1,7 +1,7 @@
-import React from "react";
 import SectionSvg from "../assets/svg/SectionSvg";
 import "../assets/scss/Section.scss";
-const Section = ({
+
+export default function Section({
   className,
   id,
   crosses,
@@ -15,7 +15,7 @@ const Section = ({
   crossesOffset?: string;
   customPaddings?: boolean;
   children: any;
-}) => {
+}) {
   return (
     <div
       id={id}
@@ -41,6 +41,4 @@ const Section = ({
       )}
     </div>
   );
-};
-
-export default Section;
+}

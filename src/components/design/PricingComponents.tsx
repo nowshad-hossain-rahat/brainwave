@@ -1,4 +1,3 @@
-import React from "react";
 import { lines } from "../../assets";
 import "../../assets/scss/PricingComponents.scss";
 

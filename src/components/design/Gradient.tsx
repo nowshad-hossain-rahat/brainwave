@@ -1,4 +1,3 @@
-import React from "react";
 import { gradient } from "../../assets";
 import "../../assets/scss/Gradient.scss";
 

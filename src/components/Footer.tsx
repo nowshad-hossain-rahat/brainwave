@@ -1,9 +1,8 @@
-import React from "react";
 import Section from "./Section";
-import { socials } from "../constants";
+import { socials } from "../constants/index";
 import "../assets/scss/Footer.scss";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <Section crosses className="footer">
       <div className="container footer-content">
@@ -26,5 +25,3 @@ const Footer = () => {
     </Section>
   );
 };
-
-export default Footer;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { brainwave } from "../assets";
@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    if (!openNavigation) return;
+    if (!openNavigation || window.innerWidth >= 768) return;
 
     enablePageScroll();
     setOpenNavigation(false);

@@ -1,4 +1,3 @@
-import React from "react";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
@@ -14,7 +13,8 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import "../assets/scss/Hero.scss";
-const Hero = () => {
+
+export default function Hero() {
   const parallaxRef = useRef(null);
 
   return (
@@ -95,6 +95,4 @@ const Hero = () => {
       <BottomLine />
     </Section>
   );
-};
-
-export default Hero;
+}

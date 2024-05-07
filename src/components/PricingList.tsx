@@ -1,10 +1,9 @@
-import React from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
 import "../assets/scss/PricingList.scss";
 
-const PricingList = () => {
+export default function PricingList() {
   return (
     <div className="pricing-list">
       {pricing.map((item) => (
@@ -42,6 +41,4 @@ const PricingList = () => {
       ))}
     </div>
   );
-};
-
-export default PricingList;
+}

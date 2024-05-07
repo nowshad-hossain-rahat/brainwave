@@ -1,15 +1,14 @@
-import React from "react";
 import { notification1 } from "../assets";
 import { notificationImages } from "../constants";
 import "../assets/scss/Notification.scss";
 
-const Notification = ({
+export default function Notification({
   className,
   title,
 }: {
   className?: string;
   title?: string;
-}) => {
+}) {
   return (
     <div className={`${className || ""} notification`}>
       <img
@@ -36,6 +35,4 @@ const Notification = ({
       </div>
     </div>
   );
-};
-
-export default Notification;
+}

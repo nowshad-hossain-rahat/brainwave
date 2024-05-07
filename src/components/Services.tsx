@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
@@ -12,7 +11,8 @@ import {
 
 import Generating from "./Generating";
 import "../assets/scss/Services.scss";
-const Services = () => {
+
+export default function Services() {
   return (
     <Section id="how-to-use">
       <div className="container services-section">
@@ -126,5 +126,3 @@ const Services = () => {
     </Section>
   );
 };
-
-export default Services;

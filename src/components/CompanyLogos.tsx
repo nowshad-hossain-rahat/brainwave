@@ -1,4 +1,3 @@
-import React from "react";
 import { companyLogos } from "../constants";
 import "../assets/scss/companylogos.scss"
 const CompanyLogos = ({ className }: { className?: string }) => {

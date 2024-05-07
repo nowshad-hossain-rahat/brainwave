@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
@@ -6,7 +5,7 @@ import PricingList from "./PricingList";
 import { LeftLine, RightLine } from "./design/PricingComponents";
 import "../assets/scss/Pricing.scss";
 
-const Pricing = () => {
+export default function Pricing() {
   return (
     <Section className="overflow-hidden" id="pricing">
       <div className="content container">
@@ -41,6 +40,4 @@ const Pricing = () => {
       </div>
     </Section>
   );
-};
-
-export default Pricing;
+}

@@ -1,5 +1,4 @@
-import React from "react";
-import { benefits } from "../constants";
+import { benefits } from "../constants/index.ts";
 import Heading from "./Heading.tsx";
 import Section from "./Section.tsx";
 import Arrow from "../assets/svg/Arrow.tsx";
